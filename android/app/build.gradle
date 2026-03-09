@@ -1,0 +1,43 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // ✅ Add this line — required for all Flutter apps
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.biomap.citizenscience"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = "25.1.8937393"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.biomap.citizenscience"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Add only the dependencies you actually use here
+}
