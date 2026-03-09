@@ -25,10 +25,11 @@ Place your firestore credentials in main.dart to store sightings data for
 apiKey: ""
 appId: ""
 messagingSenderId: ""
-projectId: "b"
+projectId: ""
 storageBucket: ""
 
 5. Run the App
 •	Connect your Android phone or start an Emulator and run
+
 
 
