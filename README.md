@@ -32,4 +32,3 @@ storageBucket: ""
 •	Connect your Android phone or start an Emulator and run
 
 
-
